@@ -1,0 +1,54 @@
+1.不会
+
+5.‘TomTomjion’
+
+8.不会
+
+9.
+Array.prototype.unique = function unique() {			
+let obj = {};
+for (let i = 0; i < this.length; i++) {
+let item = this[i];
+if (typeof obj[item] !== "undefined") {
+this[i] = this[this.length - 1];
+this.length--;
+i--;
+continue;
+}
+obj[item] = item;
+}
+obj = null	;		
+return this;
+};
+let ary = [12,23,12,13,13,12,23,14,8];
+ary.unique().sort((a, b) => a - b);
+console.log(ary);
+
+10.
+Url.prototype.getParam=function getParam(){
+let askindex=url.indexof('?'),
+     polindex=askindex[1],
+     polindex=indexof('&');
+}
+附加作业：
+1.
+function _new() {
+   _new.bark = function () {
+    console.log('wangwang');
+}
+_new.sayName = function () {
+    console.log('my name is ' + this.name);
+}
+
+}
+let sanmao = _new(Dog, '三毛');
+sanmao.bark(); //=>"wangwang"
+sanmao.sayName(); //=>"my name is 三毛"
+console.log(sanmao instanceof Dog); //=>true
+
+2.
+0的时候
+
+3.不会
+
+4. 2/4/1/4/2/1/5
