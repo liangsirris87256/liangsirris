@@ -6,7 +6,7 @@
 
 
    let xhr=new XMLHttpRequest;
-   xhr.open('GET', './json/product.json', false);
+  xhr.open('get','json/product.json',false);
    xhr.onreadystatechange=()=>{
        if(xhr.readyState===4&&xhr.status===200){
            data=JSON.parse(xhr.responseText);
@@ -23,12 +23,13 @@
        img,
        hot,
        time,
-       price
+       price,
+       title
 
    }=item;
-   str+= `<div class="card" data-price='${price}'data-hot='${hot}' data-time='${time}'>
+   str+= `<div class="card" data-price='${price}' data-hot='${hot}' data-time='${time}'>
    <img src="${img}" >
-<h3>${id}</h3>
+<h3>${title}</h3>
 <p class="text">${price}</p>
 <p class="text">${time}</p>
 <p class="text">${hot}已购买</p>
