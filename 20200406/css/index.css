@@ -6,9 +6,8 @@
 .phoneshow .nav-bar{
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 20px;
     background-color: #ccc;
-    height: 60px;
+   height: 50px;
 }
 .phoneshow .nav-bar .link{
     float: left;
@@ -33,23 +32,25 @@
     color: cornsilk;
 }
 .phoneshow .proudctBox{
-    /* display: flex; */
-    background: mintcream;
-    width: 240px;
-
+    margin-top: 10px;
+    display: flex;
+	flex-wrap: wrap;
+	margin: 10px auto;
+}
+.proudctBox .card{
+    argin-right: 1%;
+	margin-bottom: 10px;
+	width: 19.2%;
 }
 .phoneshow .proudctBox img{
     width: 100%;
 }
-.phoneshow .proudctBox h3{
-    margin-left: 20px;
-    color: lightseagreen;
-    font-size: 16px;
-    overflow: hidden;
+.proudctBox h3{
     text-overflow: ellipsis;
-    white-space: nowrap;
+	overflow: hidden;
+	white-space: nowrap;
 }
-.phoneshow .proudctBox .text{
+.proudctBox .text{
     margin-left: 20px;
     font-size: 14px;
     color: mediumvioletred;

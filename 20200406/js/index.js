@@ -38,40 +38,34 @@
     cardList=proudctBox.querySelectorAll('.card');
 
 
-  for(let i=0;i<data.length;i++){
-      let item=navList[i];
-      item.flag=-1;
-      item.onclick=function(){
-         let arr=Array.from(navList);
-         for(let j=0;j>navList.length;j++){
-             if(navList[j]!==this){
-                navList[j].flag=-1;
-             }
-            }
-             this.flag*=-1;
-             let char='data-price';
-             i==1?char='data-hot':null
-             i==2?char='data-time':null
-             arr.sort((a,b)=>{
-                a = a.getAttribute(char);
-                b = b.getAttribute(char);
-                if(char=='data-time'){
-                    a=a.replace(/-/g,'')
-                    b=b.replace(/-/g,'')
-                }
-                return (a-b)*this.flag;
-             })
-             for(let z=0;z<arr.length;z++){
-                 proudctBox.appendChild(arr[z]);
-             
+    for (let i = 0; i < navList.length; i++) {
+		let item = navList[i];
+		item.flag = -1;
+		item.onclick = function () {
+			let arr = Array.from(cardList);
+			for (let z = 0; z < navList.length; z++) {
+				if (navList[z] !== this) {
+					navList[z].flag = -1;
+				}
+			}
+			this.flag *= -1;
+			let char = "data-price";
+			i === 1 ? char = 'data-time' : null;
+			i === 2 ? char = 'data-hot' : null;
+			arr.sort((a, b) => {
+				a = a.getAttribute(char);
+				b = b.getAttribute(char);
+				if (char === 'data-time') {
+					a = a.replace(/-/g, '');
+					b = b.replace(/-/g, '');
+				}
+				return (a - b) * this.flag;
+			});
 
-         }
-      }
-  }
-   
-
-
-
-
+			for (let j = 0; j < arr.length; j++) {
+				proudctBox.appendChild(arr[j]);
+			}
+		};
+	}
 
 })();
