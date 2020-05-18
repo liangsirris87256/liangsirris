@@ -1,0 +1,734 @@
+body{
+    background-color: #eee;
+}
+.head{
+    position: relative;
+   background: url(../image/0.jpg) no-repeat center center;
+   width: 100%;
+   height: 720px;
+   z-index: 1;
+}
+
+.headr{
+    
+    width: 100%;
+    height: 78px;
+}
+.headr .logo{
+    width: 167px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.headr .logo img{
+    width: 100%;
+}
+.headr .logo,.headr .nav,.headr .login{
+    display: inline-block;
+    vertical-align: top;
+}
+.headr .nav{
+    margin-top: 25px;
+
+}
+.headr .nav ul{
+    margin-left: 30px;
+    
+}
+.headr .nav ul li{
+    float: left;
+    margin-left: 50px;
+}
+.headr .nav ul li a{
+    font-size: 18px;
+    color: #fff;
+}
+
+.head .liner{
+    background: url(//game.gtimg.cn/images/lol/v3/dark60-bg-repeat.png) repeat;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 352px;  
+}
+
+.head .liner .lin{ 
+    
+    width: 750px;
+    margin-left: 330px;
+    margin-top: 100px;
+    
+
+}
+.head .liner .lin ul{
+   float: left;
+   margin-right:45px;
+}
+.head .liner .lin ul li{
+    color: #e1e1e1;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+}
+.head:hover .liner{
+    display: block;
+}
+
+.login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 150px;
+    margin-top: 15px;
+    /* background-color: #ccc; */
+    width: 200px;
+    height:80px ;
+}
+.login .search{
+    margin: 17px 12px 0 0;
+   width: 21px;
+   height: 21px;
+}
+.login .search i{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-position: -381px -39px;
+    background-image: url(//game.gtimg.cn/images/lol/v3/topfoot-spr.png);
+    background-size: 405px 178px;
+    background-repeat: no-repeat;
+}
+.login .phone{
+    margin: -21px 113px 0 0;
+    width: 21px;
+    height: 21px;
+    float: right;
+}
+.login .phone i{
+    display: inline-block;
+    vertical-align: middle;
+    background-position: -303px -84px;
+    width: 16px;
+    height: 24px;
+    background-image: url(//game.gtimg.cn/images/lol/v3/topfoot-spr.png);
+    background-size: 405px 178px;
+    background-repeat: no-repeat;
+}
+.login .phone .phone-hudden{
+    background-position: 0 0;
+    width: 211px;
+    height: 178px;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background-image: url(//game.gtimg.cn/images/lol/v3/topfoot-spr.png);
+    background-size: 405px 178px;
+    background-repeat: no-repeat;
+    /* background: #cfcfcf; */
+    display: none;
+}
+.login .phone .phone-hudden img{
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    line-height: 117px;
+    /* background-color: #fff; */
+    margin: 22px 0 0 51px;
+    border-radius: 10px;
+}
+.login .phone .phone-hudden span{
+    display: inline-block;
+    color: #cdbe91;
+    font-size: 12px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+.login .phone:hover .phone-hudden{
+    display: block;
+}
+.chakan{
+    position: absolute;
+    bottom: 40px;
+    left: 48%;
+    width: 160px;
+    height: 40px;
+    background:rgb(0, 0, 0,.65);
+    border: 1px solid #f5de85;
+}
+.chakan a{
+    line-height: 40px;
+    text-align: center;
+    margin-left: 45px;
+    font-size: 18px;
+    color: #f5de85;
+}
+.banben{
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
+    width: 247px;
+    height: 26px;
+
+}
+.banben .dangqian{
+    font-size: 14px;
+    color: #888787;
+    margin-right: 5px;
+}
+.banben .ver{
+    font-size: 14px;
+    color: #f5d185;
+}
+.xiangqing{
+    display: inline-block;
+    width: 82px;
+    height: 26px;
+    background:rgb(0, 0, 0,.65);
+    border: 1px solid #f5de85;
+}
+.xiangqing a{
+    font-size: 14px;
+    color: #f5de85;
+    line-height: 26px;
+    text-align: center;
+    margin-left: 10px;
+}
+.banner{
+    position: relative;
+}
+.container {
+	position: relative;
+	box-sizing: border-box;
+    margin-left: 90px;
+    margin-top: 35px;
+	width: 820px;
+	height: 340px;
+	overflow: hidden;
+}
+
+.container .wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	width: 4920px;
+	height: 100%;
+	display: flex;
+
+	transition:  left .2s linear 0s;
+}
+
+.container .wrapper .slider {
+	box-sizing: border-box;
+	width: 820px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.container .wrapper .slider img {
+	width: 100%;
+	height: 100%;
+}
+.pagination{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 820px;
+    height: 40px;
+}
+.pagination li{
+    float: left;
+    width: 164px;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #424242;
+    background: #e3e2e2;
+    line-height: 40px;
+}
+
+.pagination li.active{
+   color: #ab8e66;
+   background: #f7f6f6;
+   border-bottom: 2px solid #ab8e66;
+}
+
+.ban{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.ban .ban-nav{
+    width: 500px;
+    margin-right: 50px;
+}
+
+.ban .ban-nav li{
+    float: left;
+    width: 40px;
+    height: 37px;
+   font-size: 18px;
+   
+   margin-right: 60px;
+
+}
+.ban .ban-nav li a{
+    color: #000;
+}
+.ban .ban-nav li.active:hover a{
+    color: #1da6ba;
+    /* font-size: larger; */
+}
+.ban .ban-continer .ban-hudden.active{
+    display: block;
+}
+.ban .ban-continer .ban-hudden{
+    display: none;
+}
+.ban .ban-continer .nan{
+    display: inline-block;
+    overflow: hidden;
+    line-height: 59px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 0 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:#1da6ba;
+    
+}
+.ban .ban-continer li{
+    margin-top: 15px;
+}
+.ban .ban-continer li span{
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+    border: 1px solid #bb9a6c;
+    color: #bb9a6c;
+    text-align: center;
+    
+
+}
+.ban .ban-continer li a{
+    display: inline-block;
+    font-size: 14px;
+    color: #424242;
+    margin-left: 30px;
+
+}
+.ban .ban-continer li:hover li{
+    color: #bb9a6c;
+}
+.zoom{
+    width: 100%;
+    height: 400px;
+}
+.zoom .zoom-l{
+    /* position: relative; */
+    margin-left: 90px;
+    width: 820px;
+    height: 335px;
+    float: left;
+    margin-top: 50px;
+}
+.zoom .zoom-l .zoom-top{
+    width: 100%;
+    height: 35px;
+    overflow: visible;
+    position: relative;
+}
+.zoom .zoom-l .zoom-top .zoom-a{
+    position: absolute;
+    width: auto;
+    height: 28px;
+    top: 5px;
+    left: -6px;
+    box-sizing: border-box;
+    color: #0b0b0b;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    border-left: 3px solid #1da6ba;
+}
+.zoom .zoom-l ul {
+    /* width: 692px; */
+    position: absolute;
+    height: 35px;
+    left: 128px;
+    box-sizing: border-box;
+    border-bottom: 1px #e0e2e2 solid;
+}
+.zoom .zoom-l .zoom-top ul li{
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    width: auto;
+    min-width: 40px;
+    height: 37px;
+    overflow: visible;
+    color: #676767;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 30px;
+}
+.zoom .zoom-l ul li.active:hover{
+    font-weight: 700;
+    color: #1da6ba;
+}
+.zoom .zoom-l .zoom-hudden{
+    display: none;
+}
+.zoom-top .gd{
+    float: right;
+    font-size: 12px;
+    color: #7ea1a6;
+    line-height: 35px;
+}
+.zoom .zoom-hudden{
+    /* font-size: 0; */
+    box-sizing: border-box;
+    width: 820px;
+    height: 193px;
+    margin-top: 20px;
+}
+.zoom  .zoom-l .zoom-hudden ul{
+    
+    /* margin-right: 20px; */
+}
+.zoom  .zoom-l .zoom-hudden ul li{
+   float: left;
+   width: 190px;
+   height: 278px;
+   margin-right: 10px;
+   background-color: #ffffff;
+}
+.zoom  .zoom-l .zoom-hudden ul li img{
+    width: 193px;
+    height: 230px;
+}
+.zoom-hudden>a{
+   float: left;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 5px;
+
+}
+ .zoom-hudden span{
+     float: left;
+     height: 20px;
+     font-size: 12px;
+    color: #1ad6ba;
+    margin: 25px 0 0 10px;
+}
+.zoom .zoom-l .zoom-hudden.active{
+    display: block;
+}
+
+.zoom-top .gd:hover{
+    color: #1da6ba;
+}
+.zoom .zoom-r{
+    width: 496px;
+    height: 335px;
+    float: right;
+    margin-top: 50px;
+    margin-right: 60px;
+    position: relative;
+}
+.slide-nav-ul>li {
+    float: left;
+    list-style: none;
+}
+.herf-download {
+    float: left;
+    width: 366px;
+    height: 168px;
+    overflow: hidden;
+    background-image: url(//game.gtimg.cn/images/lol/v3/pic-download.png);
+    -webkit-transition: filter .5s;
+    transition: filter .5s;
+    filter: brightness(1);
+    -webkit-filter: brightness(1);
+    position: relative;
+}
+.herf-mask {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0;
+}
+.m-gamefunc-nav .p1 {
+    margin-left: 12px;
+    
+}.btn-flashmen {
+    float: left;
+    background-position: -193px -316px;
+    width: 118px;
+    height: 76px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 76px;
+    overflow: hidden;
+    position: relative;
+}
+.btn-flashmen, .btn-play-1>a, .btn-play-1>i, .g-wrap-championlist .part-tab-title>li.selected:after, .g-wrap-championlist .part-tab-title>li:after, .g-wrap-championlist .part-tab-title>li:hover:after, .herf-type-0, .hotprogram-list-left, .hotprogram-list-right, .hover-border-1, .hover-border-2, .href-bg-0, .href-bg-1, .href-partner, .icon-666, .icon-666-on, .icon-bbs-1, .icon-fanart-1, .icon-gl-1, .icon-left-arrow, .icon-play-0, .icon-play-1, .icon-right-arrow, .icon-search, .icon-spzx-1, .icon-ss-1, .icon-sszx-1, .icon-xx, .icon-zsj, .index-spr, .inline-icon-0-left, .inline-icon-0-right, .inline-icon-1, .innerhover-border .hover-border-1, .innerhover-border .hover-border-2, .innerhover-bottom .p2>a.on>.icon-666, .innerhover-bottom .p2>a:hover>.icon-666, .m-champion-list-container .champion-item:hover .hover-icon:after, .m-new-champion-one .inner-hover>.border, .m-new-champion-one .inner-hover>.inner-hover-href, .more-hotprogram, .more-href-bg, .more-newchampion-info, .new-tab-content-ul>.first, .news-first-bg, .tab-title-selected-1, .tab-title-selected-1-off, .week-free-a, .week-free-hover>.arrow, .wfc-href-bg {
+    background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+    background-size: 638px 572px;
+    background-repeat: no-repeat;
+}
+.m-gamefunc-nav .p2 {
+    margin: 17px 0 0 12px;
+}
+.herf-type-0 {
+    float: left;
+    background-position: -193px -316px;
+    width: 118px;
+    height: 76px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 76px;
+    -webkit-transition: filter .5s;
+    transition: filter .5s;
+    filter: brightness(1);
+    -webkit-filter: brightness(1);
+}
+
+.cont{
+    /* float: left; */
+    width: 860px;
+    height: 254px;
+    margin-top: 30px;
+    margin-left: 90px;
+}
+.cont .tip,.cont .tip1{
+    
+    float: left;
+    position: relative;
+    /* margin-left: 30px; */
+    width: 430px;
+    height: 254px;
+    /* background-color: #f7f6f6; */
+}
+.cont .tip .hero,.cont .tip1 .hero{
+    display: inline-block;
+    position: absolute;
+    width: 48px;
+    height: 20px;
+    background-color: #222;
+    color: #cdbe91;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    top: 5px;
+    left: 5px;
+}
+.cont .tip .tip-1,.cont .tip1 .tip-1{
+    position: absolute;
+    color: #cdbe91;
+    font-size: 16px;
+    font-weight: 700;
+    bottom: 40px;
+    left: 20px;
+}
+.cont .tip .tip-2,.cont .tip1 .tip-2{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #cfcfcf;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.part{
+    position: absolute;
+    right: 50px;
+    top: 1510px;
+    width: 496px;
+    height: 306px;
+    /* background-color: #ccc; */
+}
+.part .part-1,.part .part-2{
+    width: 240px;
+    height: 120px;
+    margin-top: 15px;
+}
+.part .part-1 img,.part .part-2 img{
+    width: 100%;
+}
+.part .part-3{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 15px;
+}
+.part .part-4{
+   
+   background: #bb9a6c;
+    position: absolute;
+    right: 0;
+    margin-top: -60px;
+    width: 239px;
+    height: 58px;
+}
+.part .part-4:hover .part-hudden{
+    display: block;
+}
+.part .part-4 p{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 58px;
+}
+.part .part-4 .part-hudden{
+    display: none;
+    width: 430px;
+    height: 187px;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    background: #fff;
+    z-index: 2;
+    
+}
+.part-hudden ul li{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    list-style: none;
+    margin: 7px 5px 0 5px;
+    position: relative;
+}
+.part-hudden ul li img{
+    display: block;
+    width: 46px;
+    height: 46px;
+    border: 2px #bb9a6c solid;
+    border-radius: 50%;
+}
+
+.sent{
+    /* position: relative; */
+    margin-top: 50px;
+    width: 100%;
+    height: 600px;
+    background: #e3e2e2;
+    padding: 66px 0 66px 0;
+}
+.sent .sent-1{
+    width: 1358px;
+    height: 35px;
+    margin: 50px 0 20px 100px;
+}
+.sent .sent-1 p{
+    display: inline-block;
+    /* display: inline; */
+    vertical-align: middle;
+    width: 4px;
+    height: 28px;
+    background-color: #1da6ba;
+    margin-right: 10px;
+    margin-top: -10px;
+}
+.sent .sent-1 h2{
+    display:inline;
+    color: #0b0b0b;
+    
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.sent .sent-1 ul{
+    display: inline-block;
+    margin-left: 30px;
+}
+.sent .sent-1 ul li{
+    float: left;
+    cursor: pointer;
+    overflow: visible;
+    color: #676767;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 70px 0px 0;
+    text-align: center;
+    
+}
+.sent .sent-1 ul li:hover{
+    color: #1da6ba;
+    font-weight: 700;
+}
+.sent .sent-2{
+    width: 1395px;
+    height: 438px;
+    margin: 50px 100px 0 100px;
+    overflow: auto;
+}
+.sent .sent-2 ul{
+    padding: 0 10px 0 0;
+}
+.sent .sent-2 ul li{
+    float: left;
+    width: 66px;
+    height: 66px;
+    overflow: visible;
+    
+    margin: 0 16px 12px 0;
+    /* position: relative; */
+    margin-right: 36px;
+    margin-bottom: 45px;
+    cursor: pointer;
+}
+.sent .sent-2 ul li img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.footer{
+    margin-top: 30px;
+    width: 100%;
+    height: 200px;
+    padding: 45px 0;
+    background-color: #e3e2e2;
+    color: #9f9378;
+    font-size: 12px;
+    line-height: 24px;
+}
+.footer .footer-logo{
+    float: left;
+    width: 335px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.footer .footer-logo a{
+    margin-right: 20px;
+    font-size: 18px;
+    color: #ab8e66;
+}
+.footer .footer-link{
+    float: left;
+   margin-top: 30px;
+   margin-left: 200px;
+  /* margin-right: 100px; */
+}
+
